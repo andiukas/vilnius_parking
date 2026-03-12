@@ -11,7 +11,7 @@ SCAN_INTERVAL = timedelta(minutes=2)
 async def async_setup_entry(hass, config_entry, async_add_entities):
     # Paimame sąrašą iš config_entry.data
     parking_lots = config_entry.data.get("parking_lots", [])
-    entities = [VilniusParkingSensor(lot) for lot in parking_lots]
+    entities = [VilniausparkingasSensor(lot) for lot in parking_lots]
     async_add_entities(entities, True)
 
 class VilniusParkingSensor(SensorEntity):
@@ -61,4 +61,5 @@ class VilniusParkingSensor(SensorEntity):
                                     "capacity": feat["attributes"]["capacity"]
                                 }
         except Exception as e:
+
             _LOGGER.error("Klaida atnaujinant %s: %s", self._parking_lot, e)
