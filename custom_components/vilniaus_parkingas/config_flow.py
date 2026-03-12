@@ -32,7 +32,7 @@ class VilniusParkingFlowHandler(config_entries.ConfigFlow, domain=DOMAIN):
         if user_input is not None:
             await self.async_set_unique_id(DOMAIN)
             self._abort_if_unique_id_configured()
-            return self.async_create_entry(title="Vilnius Parking", data=user_input)
+            return self.async_create_entry(title="Vilniaus parkingas", data=user_input)
 
         lots = await _fetch_lots()
         return self.async_show_form(
@@ -69,4 +69,5 @@ class VilniusParkingOptionsFlowHandler(config_entries.OptionsFlow):
             data_schema=vol.Schema({
                 vol.Required("parking_lots", default=current_lots): cv.multi_select({lot: lot for lot in lots})
             })
+
         )
