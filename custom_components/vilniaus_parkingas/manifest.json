@@ -1,6 +1,6 @@
 {
   "domain": "vilnius_parkingas",
-  "name": "Vilnius parkingas",
+  "name": "Vilniaus parkingas",
   "version": "1.1.0",
   "config_flow": true,
   "documentation": "",
@@ -9,3 +9,4 @@
   "iot_class": "cloud_polling"
 
 }
+
