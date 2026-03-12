@@ -14,6 +14,16 @@
 3. **Paieška:** Suraskite ir pasirinkite **Vilniaus parkingas**.
 4. **Konfigūracija:** Laukelyje `parking_lots` iš sąrašo pasirinkite dominančias aikšteles (galima pažymėti kelias).
 
+## 📊 Sukuriami atributai
+
+Kiekvienas jutiklis (sensor) pateikia šiuos papildomus duomenis, kuriuos galite naudoti žemėlapiuose ar automatizacijose:
+
+| Atributas | Reikšmė (Pavyzdys) | Aprašymas |
+| :--- | :--- | :--- |
+| `latitude` | `54.688082...` | Aikštelės platuma |
+| `longitude` | `25.294002...` | Aikštelės ilguma |
+| `capacity` | `108` | Bendras vietų skaičius |
+| `friendly_name` | `Parking T. Kosciuškos g. 1A` | Aikštelės pavadinimas |
 ---
 *Sukurta stebėti Vilniaus miesto parkavimo infrastruktūrą.*
 
