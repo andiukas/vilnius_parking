@@ -1,10 +1,11 @@
 {
-  "domain": "vilnius_parking",
-  "name": "Vilnius Parking",
+  "domain": "vilnius_parkingas",
+  "name": "Vilnius parkingas",
   "version": "1.1.0",
   "config_flow": true,
   "documentation": "",
   "dependencies": [],
-  "codeowners": ["@andrius"],
+  "codeowners": ["@andiukas"],
   "iot_class": "cloud_polling"
+
 }
